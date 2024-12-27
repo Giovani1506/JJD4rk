@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição das variáveis de cores */
+:root {
+    --background-color: #000000; /* Preto */
+    --text-color: #ffffff; /* Branco */
+    --header-background: #000000; /* Preto */
+    --header-text-color: #ffffff; /* Branco */
+    --card-background: #000000; /* Preto */
+    --card-header-background: #ffffff; /* Branco */
+    --card-text-color: #ffffff; /* Branco */
+    --button-background: #ffffff; /* Branco */
+    --button-text-color: #000000; /* Preto */
+    --footer-background: #000000; /* Preto */
+    --footer-text-color: #ffffff; /* Branco */
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Menu */
+nav {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--button-text-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    padding: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Contêiner de cartões de download */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px 20px;
+    gap: 30px;
+}
+
+/* Estilo dos cartões de download */
+.download-card {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Cabeçalho do cartão */
+.card-header {
+    background-color: var(--card-header-background);
+    color: var(--card-text-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Corpo do cartão */
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+/* Imagem do cartão */
+.card-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom na imagem */
+.card-body img:hover {
+    transform: scale(1.1);
+}
+
+/* Botões de ação */
+.card-body a {
+    display: block;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.card-body a:hover {
+    background-color: #333333;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Estilos do tema escuro (preto) */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background-color: #111;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
